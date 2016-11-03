@@ -15,7 +15,9 @@ function initializePage() {
 
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
+    $('#subBox').hide();
     $("a.thumbnail").click(projectClick);
+    //$("a.thumbnail").click(openBox);
 }
 
 /*function	projectClick(e)	{
@@ -27,3 +29,27 @@ function initializePage() {
 					$(this).css("background-color",	"#7fff00");
 	}
 */
+
+    /*Log In box */
+	var subBox = "#subBox";
+	var subWidth = $(subBox).width() + $("#adCap").width();
+	
+	function openBox() {
+        $('#subBox').slideToggle();
+	}
+	
+	function closeBox() {
+		$('#subBox').hide();   
+	}
+	
+	$("#open").click(function(){
+		openBox();
+		return false;
+	});
+	
+	$("#close").click(function(){
+		closeBox();
+		return false;
+	});
+/*Subscription box end*/
+
