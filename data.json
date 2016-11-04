@@ -1,0 +1,112 @@
+{
+	"status": [
+		{
+			"Defense": "5",
+			"Health": "0",
+			"Regen_Chance": "0.00",
+            "Assist":"0.00",
+            "Dodge Chance": "0.00"
+		},
+        
+        {
+            "Defense": "0",
+			"Health": "20",
+			"Regen_Chance": "0.00",
+            "Assist":"0.00",
+            "Dodge Chance": "0.00"
+        },
+        
+        {
+            "Defense": "0",
+			"Health": "0",
+			"Regen_Chance": "0.15",
+            "Assist":"0.00",
+            "Dodge Chance": "0.00"
+        },
+        
+        {
+            "Defense": "0",
+			"Health": "0",
+			"Regen_Chance": "0.00",
+            "Assist":"0.15",
+            "Dodge Chance": "0.00"
+        },
+        
+        {
+            "Defense": "0",
+			"Health": "0",
+			"Regen_Chance": "0.00",
+            "Assist":"0.00",
+            "Dodge Chance": "0.15"
+        }
+	],
+    
+    "Class_Des_Page": [
+        {
+            "Title": "The Guardian Class",
+            "Des": "You value security above all else. As a result, you desire the means to protect yourself from the harsh forces of nature.",
+            "ConfirmURL": "GuardianItem.html"
+        },
+        
+        {
+            "Title": "The Medic Class",
+            "Des": "You value safety above all else. As such, you aim to lessen or outright eliminate the damage that disasters leave in their wake.",
+            "ConfirmURL": "MedicItem.html"
+        },
+        
+        {
+            "Title": "The Hunter-Gatherer Class",
+            "Des": "You value sustainability above all else. Consequently, you strive to keep yourself in optimal condition and are always thinking ahead.",
+            "ConfirmURL": "HuntGItem.html"
+        },
+        
+        {
+            "Title": "The Navigator Class",
+            "Des": "You value rescue above all else. Therefore, you aspire to find the best path through a bad situation and aren’t afraid to call on others for support.",
+            "ConfirmURL": "NaviItem.html"
+        },
+        
+        {
+            "Title": "The Jack-of-All-Trades Class",
+            "Des": "You value versatility above all else. Appropriately, you seek the ability to improvise and adapt to any situation.",
+            "ConfirmURL": "JOATItem.html"
+        },
+    ],
+    
+    "Choose_1st_Items": [
+        {
+            "Title": "Items of the Guardian",
+            "item1": "Space Blanket",
+            "item2": "Waterproof Matches",
+            "item3": "Sleeping Bag"
+        },
+        
+        {
+            "Title": "Items of the Medic",
+            "item1": "Gauze Dressing",
+            "item2": "Rubbing Alcohol",
+            "item3": "Dust Mask"
+        },
+        
+        {
+            "Title": "Items of the Hunter-Gatherer",
+            "item1": "Canteen",
+            "item2": "Canned Food",
+            "item3": "Water Filters"
+        },
+        
+        {
+            "Title": "Items of the Navigator",
+            "item1": "Whistle",
+            "item2": "Compass",
+            "item3": "Flares"
+        },
+        
+        {
+            "Title": "Items of the Jack-of-All-Trades",
+            "item1": "Swiss Army Knife",
+            "item2": "Solar Charger",
+            "item3": "Sewing Kit"
+        }
+    ]
+}
