@@ -53,3 +53,29 @@ function initializePage() {
 	});
 /*Subscription box end*/
 
+function modify_qty(val) {
+    var e_hp = document.getElementById('e_hp').value;
+    var new_e_hp = parseInt(e_hp,10) - (val/4);
+    
+    alert('You’re not currently on fire, but the Fire Entity gets worried and backs away from you, accidentally stepping in a puddle!');
+    
+    if (new_e_hp == 0) {
+        alert('BEAM ME UP SCOTTY');
+        window.location.href('Victory.html');
+    }
+    
+    document.getElementById('e_hp').value = new_e_hp;
+    return new_e_hp;
+}
+
+function add_qty(){
+    var qty = document.getElementById('qty').value;
+    var new_qty = parseInt(qty,10) + 100;
+    
+    if (new_qty > 1000) {
+        new_qty = 1000;
+    }
+    
+    document.getElementById('qty').value = new_qty;
+    return new_qty;
+}
