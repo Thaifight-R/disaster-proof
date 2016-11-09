@@ -53,29 +53,62 @@ function initializePage() {
 	});
 /*Subscription box end*/
 
-function modify_qty(val) {
+function mod_hp1(max_e_hp) {
     var e_hp = document.getElementById('e_hp').value;
-    var new_e_hp = parseInt(e_hp,10) - (val/4);
+    var new_e_hp = parseInt(e_hp,10) - (max_e_hp/4);
     
     alert('You’re not currently on fire, but the Fire Entity gets worried and backs away from you, accidentally stepping in a puddle!');
+    document.getElementById('e_hp').value = new_e_hp;
     
     if (new_e_hp == 0) {
-        alert('BEAM ME UP SCOTTY');
-        window.location.href('Victory.html');
+        alert('BEAM ME UP SCOTTY!');
+        window.location.href = "Victory.html";
     }
     
-    document.getElementById('e_hp').value = new_e_hp;
     return new_e_hp;
 }
 
-function add_qty(){
-    var qty = document.getElementById('qty').value;
-    var new_qty = parseInt(qty,10) + 100;
+function mod_hp2(max_e_hp){
+    var e_hp = document.getElementById('e_hp').value;
+    var new_e_hp = parseInt(e_hp,10) - (max_e_hp/2);
     
-    if (new_qty > 1000) {
-        new_qty = 1000;
+    alert('You use a piece of wood lying around and manage to open the hydrant. It drenches the Fire Entity!');
+    document.getElementById('e_hp').value = new_e_hp;
+    
+    if (new_e_hp == 0) {
+        alert('BEAM ME UP SCOTTY!');
+        window.location.href = "Victory.html";
     }
     
-    document.getElementById('qty').value = new_qty;
-    return new_qty;
+    return new_e_hp;
+}
+
+function mod_hp3(max_e_hp){
+    var e_hp = document.getElementById('e_hp').value;
+    var new_e_hp = parseInt(e_hp,10) - (max_e_hp/4);
+    
+    alert('You assemble some debris together into a barricade and it actually acts as a controlled burn. The Fire Entity loses energy!');
+    document.getElementById('e_hp').value = new_e_hp;
+    
+    if (new_e_hp == 0) {
+        alert('BEAM ME UP SCOTTY!');
+        window.location.href = "Victory.html";
+    }
+    
+    return new_e_hp;
+}
+
+function mod_hp4(max_e_hp){
+    var e_hp = document.getElementById('e_hp').value;
+    var new_e_hp = parseInt(e_hp,10) - (max_e_hp/2);
+    
+    alert('You dash forward, but the Fire Entity cuts you off! You jump at the last moment and come across a fire extinguisher on the ground. It douses the flames!');
+    document.getElementById('e_hp').value = new_e_hp;
+    
+    if (new_e_hp == 0) {
+        alert('BEAM ME UP SCOTTY!');
+        window.location.href = "Victory.html";
+    }
+    
+    return new_e_hp;
 }
