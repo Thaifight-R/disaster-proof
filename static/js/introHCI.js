@@ -55,6 +55,12 @@ function initializePage() {
 
 function mod_hp1(max_e_hp) {
     var e_hp = document.getElementById('e_hp').value;
+    if (e_hp == 0){
+        alert("HE'S ALREADY DEAD!");
+        window.location.href = "Victory.html";
+        return;
+    }
+    
     var new_e_hp = parseInt(e_hp,10) - (max_e_hp/4);
     
     alert('You’re not currently on fire, but the Fire Entity gets worried and backs away from you, accidentally stepping in a puddle!');
@@ -70,6 +76,12 @@ function mod_hp1(max_e_hp) {
 
 function mod_hp2(max_e_hp){
     var e_hp = document.getElementById('e_hp').value;
+    if (e_hp == 0){
+        alert("HE'S ALREADY DEAD!");
+        window.location.href = "Victory.html";
+        return;
+    }
+    
     var new_e_hp = parseInt(e_hp,10) - (max_e_hp/2);
     
     alert('You use a piece of wood lying around and manage to open the hydrant. It drenches the Fire Entity!');
@@ -85,6 +97,12 @@ function mod_hp2(max_e_hp){
 
 function mod_hp3(max_e_hp){
     var e_hp = document.getElementById('e_hp').value;
+    if (e_hp == 0){
+        alert("HE'S ALREADY DEAD!");
+        window.location.href = "Victory.html";
+        return;
+    }
+    
     var new_e_hp = parseInt(e_hp,10) - (max_e_hp/4);
     
     alert('You assemble some debris together into a barricade and it actually acts as a controlled burn. The Fire Entity loses energy!');
@@ -100,6 +118,12 @@ function mod_hp3(max_e_hp){
 
 function mod_hp4(max_e_hp){
     var e_hp = document.getElementById('e_hp').value;
+    if (e_hp == 0){
+        alert("HE'S ALREADY DEAD!");
+        window.location.href = "Victory.html";
+        return;
+    }
+    
     var new_e_hp = parseInt(e_hp,10) - (max_e_hp/2);
     
     alert('You dash forward, but the Fire Entity cuts you off! You jump at the last moment and come across a fire extinguisher on the ground. It douses the flames!');
