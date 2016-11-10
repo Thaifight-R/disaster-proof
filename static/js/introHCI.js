@@ -30,109 +30,248 @@ function initializePage() {
 	}
 */
 
-    /*Log In box */
-	var subBox = "#subBox";
-	var subWidth = $(subBox).width() + $("#adCap").width();
+/*Log In box */
+var subBox = "#subBox";
+var subWidth = $(subBox).width() + $("#adCap").width();
+
 	
-	function openBox() {
-        $('#subBox').slideToggle();
-	}
+function openBox() {
+    $('#subBox').slideToggle();
+}
 	
-	function closeBox() {
-		$('#subBox').hide();   
-	}
+function closeBox() {
+    $('#subBox').hide();   
+}
 	
-	$("#open").click(function(){
-		openBox();
-		return false;
-	});
+$("#open").click(function(){
+    openBox();
+    return false;
+});
 	
-	$("#close").click(function(){
-		closeBox();
-		return false;
-	});
+$("#close").click(function(){
+    closeBox();
+    return false;
+});
+
+$("#accept1").click(function(){
+    window.location.href = "Overworld2.html";
+    return false;
+})
+
+    
 /*Subscription box end*/
 
-function mod_hp1(max_e_hp) {
+
+function mod_hp_1(max_e_hp) {
     var e_hp = document.getElementById('e_hp').value;
-    if (e_hp == 0){
+    var u_hp = document.getElementById('u_hp').value;
+    
+    if (u_hp == 0){
+        alert("YOU'RE ALREADY DEAD!");
+        window.location.href = "Overworld.html";
+        return;
+    }
+    
+    else if (e_hp == 0){
         alert("HE'S ALREADY DEAD!");
         window.location.href = "Victory.html";
         return;
     }
     
     var new_e_hp = parseInt(e_hp,10) - (max_e_hp/4);
+    var new_u_hp = parseInt(u_hp,10) - 15;
     
     alert('You’re not currently on fire, but the Fire Entity gets worried and backs away from you, accidentally stepping in a puddle!');
-    document.getElementById('e_hp').value = new_e_hp;
+    alert('It gets angry at you for startling it!');
     
-    if (new_e_hp == 0) {
+    if (new_u_hp <= 0){
+        document.getElementById('u_hp').value = 0;
+        
+        if (new_e_hp <= 0){
+            document.getElementById('e_hp').value = 0;
+        }
+        
+        document.getElementById('e_hp').value = new_e_hp;
+        alert('GAME OVER BOY!');
+        window.location.href = "Overworld.html";
+        return;
+    }
+    
+    if (new_e_hp <= 0) {
+        document.getElementById('e_hp').value = 0;
+        
+        if (new_u_hp <= 0){
+            document.getElementById('u_hp').value = 0;
+        }
+        
+        document.getElementById('u_hp').value = new_e_hp;
+        
         alert('BEAM ME UP SCOTTY!');
         window.location.href = "Victory.html";
     }
     
+    document.getElementById('e_hp').value = new_e_hp;
+    document.getElementById('u_hp').value = new_u_hp;
     return new_e_hp;
 }
 
-function mod_hp2(max_e_hp){
+function mod_hp_2(max_e_hp){
     var e_hp = document.getElementById('e_hp').value;
-    if (e_hp == 0){
+    var u_hp = document.getElementById('u_hp').value;
+    
+    if (u_hp == 0){
+        alert("YOU'RE ALREADY DEAD!");
+        window.location.href = "Overworld.html";
+        return;
+    }
+    
+    else if (e_hp == 0){
         alert("HE'S ALREADY DEAD!");
         window.location.href = "Victory.html";
         return;
     }
     
     var new_e_hp = parseInt(e_hp,10) - (max_e_hp/2);
+    var new_u_hp = parseInt(u_hp,10) - 20;
     
     alert('You use a piece of wood lying around and manage to open the hydrant. It drenches the Fire Entity!');
-    document.getElementById('e_hp').value = new_e_hp;
+    alert('However, it spreads around you in retaliation!');
     
-    if (new_e_hp == 0) {
+    if (new_u_hp <= 0){
+        document.getElementById('u_hp').value = 0;
+        
+        if (new_e_hp <= 0){
+            document.getElementById('e_hp').value = 0;
+        }
+        
+        document.getElementById('e_hp').value = new_e_hp;
+        alert('GAME OVER BOY!');
+        window.location.href = "Overworld.html";
+        return;
+    }
+    
+    if (new_e_hp <= 0) {
+        document.getElementById('e_hp').value = 0;
+        
+        if (new_u_hp <= 0){
+            document.getElementById('u_hp').value = 0;
+        }
+        
+        document.getElementById('u_hp').value = new_e_hp;
+        
         alert('BEAM ME UP SCOTTY!');
         window.location.href = "Victory.html";
     }
     
+    document.getElementById('e_hp').value = new_e_hp;
+    document.getElementById('u_hp').value = new_u_hp;
     return new_e_hp;
 }
 
-function mod_hp3(max_e_hp){
+function mod_hp_3(max_e_hp){
     var e_hp = document.getElementById('e_hp').value;
-    if (e_hp == 0){
+    var u_hp = document.getElementById('u_hp').value;
+    
+    if (u_hp == 0){
+        alert("YOU'RE ALREADY DEAD!");
+        window.location.href = "Overworld.html";
+        return;
+    }
+    
+    else if (e_hp == 0){
         alert("HE'S ALREADY DEAD!");
         window.location.href = "Victory.html";
         return;
     }
     
     var new_e_hp = parseInt(e_hp,10) - (max_e_hp/4);
+    var new_u_hp = parseInt(u_hp,10) - 30;
     
     alert('You assemble some debris together into a barricade and it actually acts as a controlled burn. The Fire Entity loses energy!');
-    document.getElementById('e_hp').value = new_e_hp;
+    alert('However, it takes advantage of the fact you’re still too close to the fire!');
     
-    if (new_e_hp == 0) {
+    if (new_u_hp <= 0){
+        document.getElementById('u_hp').value = 0;
+        
+        if (new_e_hp <= 0){
+            document.getElementById('e_hp').value = 0;
+        }
+        
+        document.getElementById('e_hp').value = new_e_hp;
+        alert('GAME OVER BOY!');
+        window.location.href = "Overworld.html";
+        return;
+    }
+    
+    if (new_e_hp <= 0) {
+        document.getElementById('e_hp').value = 0;
+        
+        if (new_u_hp <= 0){
+            document.getElementById('u_hp').value = 0;
+        }
+        
+        document.getElementById('u_hp').value = new_e_hp;
+        
         alert('BEAM ME UP SCOTTY!');
         window.location.href = "Victory.html";
     }
     
+    document.getElementById('e_hp').value = new_e_hp;
+    document.getElementById('u_hp').value = new_u_hp;
+    
     return new_e_hp;
 }
 
-function mod_hp4(max_e_hp){
+function mod_hp_4(max_e_hp){
     var e_hp = document.getElementById('e_hp').value;
-    if (e_hp == 0){
+    var u_hp = document.getElementById('u_hp').value;
+    
+    if (u_hp == 0){
+        alert("YOU'RE ALREADY DEAD!");
+        window.location.href = "Overworld.html";
+        return;
+    }
+    
+    else if (e_hp == 0){
         alert("HE'S ALREADY DEAD!");
         window.location.href = "Victory.html";
         return;
     }
     
     var new_e_hp = parseInt(e_hp,10) - (max_e_hp/2);
+    var new_u_hp = parseInt(u_hp,10) - 40;
     
     alert('You dash forward, but the Fire Entity cuts you off! You jump at the last moment and come across a fire extinguisher on the ground. It douses the flames!');
-    document.getElementById('e_hp').value = new_e_hp;
+    alert('You took quite a hit from the jump though …');
     
-    if (new_e_hp == 0) {
+    if (new_u_hp <= 0){
+        document.getElementById('u_hp').value = 0;
+        
+        if (new_e_hp <= 0){
+            document.getElementById('e_hp').value = 0;
+        }
+        
+        document.getElementById('e_hp').value = new_e_hp;
+        alert('GAME OVER BOY!');
+        window.location.href = "Overworld.html";
+        return;
+    }
+    
+    if (new_e_hp <= 0) {
+        document.getElementById('e_hp').value = 0;
+        
+        if (new_u_hp <= 0){
+            document.getElementById('u_hp').value = 0;
+        }
+        
+        document.getElementById('u_hp').value = new_e_hp;
+        
         alert('BEAM ME UP SCOTTY!');
         window.location.href = "Victory.html";
     }
+    
+    document.getElementById('e_hp').value = new_e_hp;
+    document.getElementById('u_hp').value = new_u_hp;
     
     return new_e_hp;
 }
