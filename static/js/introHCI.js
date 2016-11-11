@@ -15,7 +15,10 @@ function initializePage() {
 
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
+    
+    $('a#select').hide();
     $('#subBox').hide();
+    //$('#subBox2').hide();
     $("a.thumbnail").click(projectClick);
     //$("a.thumbnail").click(openBox);
 }
@@ -37,10 +40,19 @@ var subWidth = $(subBox).width() + $("#adCap").width();
 	
 function openBox() {
     $('#subBox').slideToggle();
+    //$('#subBox2').hide();
 }
+
+/*
+function openBox2(){
+    $('#subBox2').slideToggle();
+    $('#subBox').hide();
+}
+*/
 	
 function closeBox() {
-    $('#subBox').hide();   
+    $('#subBox').hide();
+    //$('#subBox2').hide();
 }
 	
 $("#open").click(function(){
@@ -58,6 +70,11 @@ $("#accept1").click(function(){
     return false;
 })
 
+//test slide multiple
+ $(".project a").click(function () {
+      $(this).parent().find(".description").slideToggle("fast");
+      $(this).parent().find("#select").slideToggle("fast");
+    });
     
 /*Subscription box end*/
 
