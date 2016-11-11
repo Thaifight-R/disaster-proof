@@ -122,6 +122,70 @@ function mod_hp(round_num, comm_num){
         alert(' It rips through the piping and throws the pieces at you!');
     }
     
+    else if (comm_num == 9) {
+        new_e_hp = parseInt(e_hp,10) - 60;
+        new_u_hp = parseInt(u_hp,10) - 30;
+        
+        alert('You try to escape the Typhoon Lord’s path as it whips up miniature tornadoes to stop you. You evade as best you can, when you notice something go in your favor: one of the created tornadoes is anticyclonic, which rotates in the opposite direction, and actually weakens the Typhoon Lord by stealing its wind flow!');
+        alert('The Typhoon Lord rapidly spins to pull you back within its range, cutting you in the process.')
+    }
+    
+    else if (comm_num == 10) {
+        new_e_hp = parseInt(e_hp,10) - 0;
+        new_u_hp = parseInt(u_hp,10) - 75;
+        
+        alert('You hurry to a nearby overpass and duck underneath. However, winds actually accelerate in these areas!');
+        alert('The Typhoon Lord channels wind currents and throws you back into the open!');
+    }
+    
+    else if (comm_num == 11) {
+        new_e_hp = parseInt(e_hp,10) - 75;
+        new_u_hp = parseInt(u_hp,10) - 35;
+        
+        alert('Despite being far away, you head toward a sturdy structure as fast as possible. You make it inside but the Typhoon Lord is in a frenzy, throwing debris all around and hurting itself!');
+        alert('The debris thrown around destroys all but first floor of the building! A small amount of rubble hits you through the windows.');
+    }
+    
+    else if (comm_num == 12) {
+        new_e_hp = parseInt(e_hp,10) - 50;
+        new_u_hp = parseInt(u_hp,10) - 25;
+        
+        alert('You leap toward a lower elevation as the Typhoon Lord hurls large debris right in your direction. You lay flat and the debris just misses you, though it took quite a bit of energy for the Typhoon Lord to throw with that much force.');
+        alert('While heroic, that was still a hard fall into the ground you took…');
+    }
+    
+    else if (comm_num == 13) {
+        new_e_hp = parseInt(e_hp,10) - 20;
+        new_u_hp = parseInt(u_hp,10) - 10;
+        
+        alert('As you climb to higher roads and the water below effectively becomes white-water rapids, you notice a blocked storm drain. Removing the wreckage, you lessen the water in the immediate area and weaken the Flood Emperor!');
+        alert('The Flood Emperor increases the amount of rainfall, drenching you and your clothes.');
+    }
+    
+    else if (comm_num == 14) {
+        new_e_hp = parseInt(e_hp,10) - 95;
+        new_u_hp = parseInt(u_hp,10) - 40;
+        
+        alert('Remembering your fight with the Earth Golem, you quickly look for any machinery that could cause trouble if left on. Just as the Flood Emperor shoots pressurized water at an electric box, you already diverted the power and it ends up getting shocked!');
+        alert('In retaliation, the Flood Emperor raises the water level high enough to start moving vehicles and one crashes right into the room you were in!');
+    }
+    
+    else if (comm_num == 15) {
+        new_e_hp = parseInt(e_hp,10) - 0;
+        new_u_hp = parseInt(u_hp,10) - 175;
+        
+        alert('The water is only 8 inches deep as you make your way toward safety, but the Flood Emperor opportunistically uses this to knock you off balance. The current proves too strong and you are swept away.');
+        alert('Unable to get out of the water, hidden dangers lurking within like wild animals and disease deal the final blow.');
+    }
+    
+    else if (comm_num == 16) {
+        new_e_hp = parseInt(e_hp,10) - 0;
+        new_u_hp = parseInt(u_hp,10) - 0;
+        
+        alert(' You throw a makeshift floatation device (e.g., a football) to the person in the stalled car and they’re able to use it to make their way to safety. The Flood Emperor tried to move the vehicle before you could save the person within, yet there wasn’t enough current nearby to do so.');
+        alert('You and the Flood Emperor both stare at each other, aware you’re at an impasse.');
+    }
+    
     else {
         new_e_hp = 0;
         new_u_hp = 0;

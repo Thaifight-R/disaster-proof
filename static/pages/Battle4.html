@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="../css/introHCI.css" rel="stylesheet">
+	<link href="../css/battle-theme.css" rel="stylesheet">
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -41,31 +41,27 @@
             <input id="e_hp" value="400" />
         </div>
         
-        <div class="box" id="userbx">
+        <div class="ice" id="userbx">
             <label for="uhp"><abbr title="User's Health">Your HP</abbr></label>
             <input id="u_hp" value="175" />
         </div>
         
         
-        <div class="project" id="project1">
-			<a href="Victory4.html" class="battlebtn1">Get to open area</a>
-		</div>
-        <div class="project" id="project2">
-			<a href="Victory4.html" class="battlebtn2">Hide behind wall</a>
-		</div>
+        <div id="container">
+            <button type="battle command 1" id="button1" onclick="mod_hp(4, 13)">Climb to higher ground</button>
+            <button type="battle command 2" id="button2" onclick="mod_hp(4, 14)">Shut off utilities</button>
+        </div>
         
-        <div class="project" id="project3">
-			<a href="Victory4.html" class="battlebtn3">Crawl underneath furniture</a>
-		</div>
-        <div class="project" id="project4">
-			<a href="Victory4.html" class="battlebtn4">Unplug nearby appliances</a>
-		</div>
+        <div id="container">
+            <button type="battle command 3" id="button3" onclick="mod_hp(4, 15)">Fight the current toward a raft</button>
+            <button type="battle command 4" id="button4" onclick="mod_hp(4, 16)">Help victim escape car </button>
+        </div>
         
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
-    <script	src="../js/introHCI.js"></script>
+    <script	src="../js/battlecom.js"></script>
 
 </body>
 </html>
