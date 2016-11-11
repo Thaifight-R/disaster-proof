@@ -1,0 +1,212 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
+	color: #CC00AA;
+}
+
+/* this style exists to make it obvious that you've successfully linked
+   the CSS to the page. feel free to remove it once the link is working. */
+body {
+     border: 1px dotted gray;
+     padding: 20px;
+}
+
+.jumbotron {
+	position: relative;
+	background: none;
+    border-bottom: 0px;
+}
+
+.jumbotron:after {
+     content:"";
+     background: url("../images/lorempixel.jumbotron.jpeg");
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;	
+}
+
+.jumbotron p {
+     color: #6e6e6e;
+}
+
+.project a {
+    text-align: center;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.battlebtn1 {
+    float:left;
+    position: relative;
+    width: 20%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 20px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.battlebtn2 {
+    float:left;
+    position: relative;
+    width: 20%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    display: block;
+    padding: 5px;
+    margin-bottom: 20px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.battlebtn3 {
+    float:left;
+    position: relative;
+    width: 20%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    display: block;
+    padding: 5px;
+    margin-bottom: 20px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.battlebtn4 {
+    float:left;
+    position: relative;
+    width: 20%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    display: block;
+    padding: 5px;
+    margin-bottom: 20px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.box {
+	/* basics */
+	background-color: #FF6347;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+
+	/* rounded corners */
+    -webkit-border-radius: 12px;
+    border-radius: 12px; 
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+    /*padding: .8em .8em 1em; */
+    padding: 5px 5px;
+    width: 8em;
+	margin: 0 auto;	
+  	-webkit-box-shadow: 0px 0px 12px 0px #000;
+    box-shadow: 0px 0px 12px 0px #000;
+  
+}
+
+.ice {
+	/* basics */
+	background-color: #32CD32;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+
+	/* rounded corners */
+    -webkit-border-radius: 12px;
+    border-radius: 12px; 
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+    /*padding: .8em .8em 1em;*/
+    padding: 5px 5px;
+    width: 8em;
+	margin: 0 auto;	
+  	-webkit-box-shadow: 0px 0px 12px 0px #000;
+    box-shadow: 0px 0px 12px 0px #000;
+  
+}
+
+input {
+	font-size: 1.4em;
+	background-color: transparent;
+	text-align: center;
+	border-width: 0;
+	width: 100%;
+	margin: 0 0 .1em 0;
+	color: #fff;
+}
+
+label {
+	display: block;
+	font-size: .8em;
+    color: black;
+}
+
+#container {
+    text-align: center;
+}
+    
+button {
+    display: inline-block;
+}
+
+#button1 {
+    width: 300px;
+    height: 40px;
+}
+
+#button2 {
+    width: 300px;
+    height: 40px;
+}
+#button3 {
+    width: 300px;
+    height: 40px;
+}
+
+#button4 {
+    width: 300px;
+    height: 40px;
+}

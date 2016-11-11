@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="../css/introHCI.css" rel="stylesheet">
+	<link href="../css/battle-theme.css" rel="stylesheet">
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -41,31 +41,26 @@
             <input id="e_hp" value="100" />
         </div>
         
-        <div class="box" id="userbx">
+        <div class="ice" id="userbx">
             <label for="uhp"><abbr title="User's Health">Your HP</abbr></label>
             <input id="u_hp" value="100" />
         </div>
         
         
-        <div class="project" id="project1" onclick="mod_hp(1, 1)">
-			<a href="#" class="battlebtn1">Stop, drop, and roll</a>    
-		</div>
-        <div class="project" id="project2" onclick="mod_hp(1, 2)">
-			<a href="#" class="battlebtn2">Activate a nearby fire hydrant</a>
-		</div>
+        <div id="container">
+            <button type="battle command 1" id="button1" onclick="mod_hp(1, 1)">Stop, drop, and roll</button>
+            <button type="battle command 2" id="button2" onclick="mod_hp(1, 2)">Activate a nearby fire hydrant</button>
+        </div>
         
-        <div class="project" id="project3" onclick="mod_hp(1, 3)">
-			<a href="#" class="battlebtn3">Fortify surrounding area</a>
-		</div>
-        <div class="project" id="project4" onclick="mod_hp(1, 4)">
-			<a href="#" class="battlebtn4">Make a break for it</a>
-		</div>
+        <div id="container">
+            <button type="battle command 3" id="button3" onclick="mod_hp(1, 3)">Fortify surrounding area</button>
+            <button type="battle command 4" id="button4" onclick="mod_hp(1, 4)">Make a break for it</button>
+        </div>
         
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
-    <!-- <script	src="../js/introHCI.js"></script> -->
     <script src="../js/battlecom.js"></script>
 
 </body>
