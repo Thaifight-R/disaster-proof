@@ -45,11 +45,13 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 30px;
 }
 
 h2 {
     text-align: center;
-    padding-bottom: 20px;
+    font-size: 25px;
+    padding-bottom: 0px;
 }
 
 p {
@@ -140,7 +142,7 @@ p {
     -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
     /*padding: .8em .8em 1em; */
     padding: 5px 5px;
-    width: 8em;
+    width: 10em;
 	margin: 0 auto;	
   	-webkit-box-shadow: 0px 0px 12px 0px #000;
     box-shadow: 0px 0px 12px 0px #000;
@@ -161,7 +163,7 @@ p {
     -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
     /*padding: .8em .8em 1em;*/
     padding: 5px 5px;
-    width: 8em;
+    width: 10em;
 	margin: 0 auto;	
   	-webkit-box-shadow: 0px 0px 12px 0px #000;
     box-shadow: 0px 0px 12px 0px #000;
