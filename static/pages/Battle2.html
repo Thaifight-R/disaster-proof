@@ -64,7 +64,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         <h2>Choose any action to conquer the disaster (you can perform the same action more than once).</h2>
         
         <div id="container">
-            <button type="battle command 1" id="button1" onclick="mod_hp(2, 5)">Get to open area</button>
+            <button type="battle command 1" id="button1" onclick="mod_hp(2, 5); _gaq.push(['_trackEvent', 'button1', 'clicked']);">Get to open area</button>
             <button type="battle command 2" id="button2" onclick="mod_hp(2, 6)">Hide behind wall</button>
         </div>
         
